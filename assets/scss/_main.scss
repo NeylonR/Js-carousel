@@ -1,0 +1,42 @@
+main {
+    #carousel {
+        position: relative;
+        @include flex(space-between, $direction: column);
+        text-align: center;
+        width: 500px;
+        height: 500px;
+        padding: 2em;
+        margin: 0 auto;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+
+        #rightCarousel, #leftCarousel {
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            top:0;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        #rightCarousel {
+            right: 0;
+        }
+
+        #leftCarousel {
+            left: 0;
+        }
+
+        h1 {
+            font-size: 1.8em;
+            padding: 2em 0 1em;
+        }
+
+        p {
+            font-size: 1.5em;
+            padding: 1em 0 0;
+        }
+    }
+}

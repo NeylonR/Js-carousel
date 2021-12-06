@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(../fonts/roboto/Roboto-Regular.ttf);
+}
+body {
+  font-family: roboto;
+}
+
+main #carousel {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 500px;
+  height: 500px;
+  padding: 2em;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+main #carousel #rightCarousel, main #carousel #leftCarousel {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  background: transparent;
+  cursor: pointer;
+}
+main #carousel #rightCarousel {
+  right: 0;
+}
+main #carousel #leftCarousel {
+  left: 0;
+}
+main #carousel h1 {
+  font-size: 1.8em;
+  padding: 2em 0 1em;
+}
+main #carousel p {
+  font-size: 1.5em;
+  padding: 1em 0 0;
+}
+
+/*# sourceMappingURL=style.css.map */
